@@ -1,0 +1,26 @@
+body>*{
+    display: flex;
+    justify-content: center;
+}
+
+.container-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-column-block{
+    height: 33vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#booking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

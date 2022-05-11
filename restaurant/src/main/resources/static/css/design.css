@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap%27');
+*{
+    font-family: 'Rubik', sans-serif;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 10px;
+    border:2px solid black;
+    /* border-radius: 10px; */
+    color: black;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+}
+
+.btn {
+    border: 0 solid;
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, 0.5);
+    text-shadow: none;
+    transition: all 210ms ease-in-out;
+}
+   
+.btn:hover {
+    border: 1px solid;
+    outline-color: rgba(255, 255, 255, 0);
+    text-shadow: 1px 1px 2px #427388;
+}
+
+body{
+    background: url(../img/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

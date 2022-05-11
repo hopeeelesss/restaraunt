@@ -1,0 +1,26 @@
+#employees{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.employee{
+    margin: 10px;
+}
+
+.employee-pic{
+    width: 150px;
+    height: 200px;
+    border: 1px black;
+}
+
+@media (max-width:425px) {
+    .employee-pic{
+        width: 90px;
+        height: 120px;
+        border: 1px black;
+    }
+    #employee-block{
+        height: 50vh;
+    }
+}

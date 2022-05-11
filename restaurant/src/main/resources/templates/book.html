@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/templates.css" type="text/css">
+        <link rel="stylesheet" href="css/design.css" type="text/css">
+    </head>
+    <body>
+        <h3>Контактные данные</h3>
+        <form id="booking" th:action="@{/booking}" th:method="POST" th:object="${booking}">
+            <label for="name">Имя</label>
+            <input id="name" th:field="*{name}" type="text" required>
+            <label for="surname">Фамилия</label>
+            <input id="surname" th:field="*{surname}" type="text" required>
+            <label for="phone">Телефон</label>
+            <input id="phone" th:field="*{telephone}" type="text" required>
+            <button class="btn" type="submit">Забронировать</button>
+            <a href="/menu" class="backref btn">Назад</a>
+        </form>
+    </body>
+</html>
