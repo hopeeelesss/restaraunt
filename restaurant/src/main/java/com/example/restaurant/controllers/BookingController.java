@@ -33,8 +33,7 @@ public class BookingController {
 
     @PostMapping
     public String setBooking(@ModelAttribute("booking") Booking booking){
-        Date date = new Date(System.currentTimeMillis());
-        List<Booking> todaybooking = bookingRepo.findAllByDate(date);
+        List<Booking> todaybooking = bookingRepo.findAllByDate(booking.getDate());
         if(todaybooking.size() > 10){
             return "redirect:/booking/denied";
         }
